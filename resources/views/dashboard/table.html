@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>USERS || Page</title>
+    <link rel="shortcut icon" href="{{ asset('images/logo.png') }}" />
+    <!--------Tilte------------------->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--------Meta------------------->
+    <link rel="stylesheet" href="../main.css/main-dash.css">
+    <link rel="stylesheet" href='../Global.css/font-awesome.min.css'>
+    <link rel="stylesheet" href="../Global.css/main.css">
+    <link rel="stylesheet" href="../main.css/main-dash-media.css">
+    <link rel="stylesheet" href="'../main.css/table.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!--------Links------------------->
+</head>
+<body>
+
+    <!----- Load || animation ||  START---->
+    <div class="parent_load">
+        <div class="load_line1 load"></div>
+        <div class="load_line2 load"></div>
+        <div class="load_line3 load"></div>
+        <div class="load_line4 load"></div>
+    </div>
+    <!----- Load || animation ||  END---->
+
+    <img src="../images/back_1.png" alt="" class="back_image">
+    <!----- Back || Ground || Body || Image  ----->
+
+    <!---------HEADER || START--------->
+        <header>
+            <div class="logo">
+                <h2>{{ $admins->logo }}</h2>
+            </div>  <!----Logo---->
+
+            <form class="search_inp" method="post" action="/subscriber-search">
+                {{ csrf_field() }}
+                <input type="search" placeholder="البحث..." name="searchBox" aria-label="Search">
+                <button class="btn" type="submit">بحث</button>
+            </form><!---- Search || Input ---->
+
+            <div class="header_icons_contorls">
+                <i class="fa fa-cog"></i>
+                <i class="fa fa-bars"></i>
+            </div><!----Header || Icons || Cotnrols ---->
+        </header>
+
+
+        <form id="logout-form" action="/logout" method="post">
+            {{csrf_field()}}
+        </form>
+
+    <!---------HEADER || END--------->
+
+
+    <!--------- Main_table||Start --------->
+    <div class="main_table">
+        <div class="main_line">
+            <div class="name">اسم الطالب</div>
+            <div class="text">تسجيل حضور الطلاب</div>
+            <div class="history">
+                <div class="history_data">2021/25/6</div> 
+            </div>
+        </div>
+        <!-- Main_line || End -->
+        <div class="local_line">
+            <div class="local_name_data">د علي حسن حامد علي حسن</div>
+            <!-- Local_name_data || End -->
+            <div class="local_point_data_active">
+                <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+                <div class="history_data_check">2021/25/4</div>
+            </div>
+            <!-- Local_point_data_active --- 1 -->
+            <div class="local_point_data_active">
+                <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+                <div class="history_data_check">2021/25/4</div>
+            </div>
+            <!-- Local_point_data_active --- 2 -->
+            <div class="local_point_data_active">
+                <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+                <div class="history_data_check">2021/25/4</div>
+            </div>
+            <!-- Local_point_data_active --- 3 -->
+            <div class="local_point_data_active">
+                <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+                <div class="history_data_check">2021/25/4</div>
+            </div>
+            <!-- Local_point_data_active --- 4 -->
+            <div class="local_point_data_active">
+                <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+                <div class="history_data_check">2021/25/4</div>
+            </div>
+            <!-- Local_point_data_active --- 5 -->
+            <div class="local_point_data_active">
+                <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+                <div class="history_data_check">2021/25/4</div>
+            </div>
+            <!-- Local_point_data_active --- 6 -->
+            <div class="local_point_data_active">
+                <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+                <div class="history_data_check">2021/25/4</div>
+            </div>
+            <!-- Local_point_data_active --- 7 -->
+            <div class="local_point_data_active">
+                <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+                <div class="history_data_check">2021/25/4</div>
+            </div>
+            <!-- Local_point_data_active --- 8 -->
+        </div>
+    <!-- Local_line || End -->
+
+    <div class="local_line">
+        <div class="local_name_data">د علي حسن حامد علي حسن</div>
+        <!-- Local_name_data || End -->
+        <div class="local_point_data_active">
+            <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+            <div class="history_data_check">2021/25/4</div>
+        </div>
+        <!-- Local_point_data_active --- 1 -->
+        <div class="local_point_data_active">
+            <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+            <div class="history_data_check">2021/25/4</div>
+        </div>
+        <!-- Local_point_data_active --- 2 -->
+        <div class="local_point_data_active">
+            <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+            <div class="history_data_check">2021/25/4</div>
+        </div>
+        <!-- Local_point_data_active --- 3 -->
+        <div class="local_point_data_active">
+            <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+            <div class="history_data_check">2021/25/4</div>
+        </div>
+        <!-- Local_point_data_active --- 4 -->
+        <div class="local_point_data_active">
+            <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+            <div class="history_data_check">2021/25/4</div>
+        </div>
+        <!-- Local_point_data_active --- 5 -->
+        <div class="local_point_data_active">
+            <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+            <div class="history_data_check">2021/25/4</div>
+        </div>
+        <!-- Local_point_data_active --- 6 -->
+        <div class="local_point_data_active">
+            <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+            <div class="history_data_check">2021/25/4</div>
+        </div>
+        <!-- Local_point_data_active --- 7 -->
+        <div class="local_point_data_active">
+            <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+            <div class="history_data_check">2021/25/4</div>
+        </div>
+        <!-- Local_point_data_active --- 8 -->
+    </div>
+<!-- Local_line || End -->
+
+<div class="local_line">
+    <div class="local_name_data">د علي حسن حامد علي حسن</div>
+    <!-- Local_name_data || End -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 1 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 2 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 3 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 4 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 5 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 6 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 7 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 8 -->
+</div>
+<!-- Local_line || End -->
+
+<div class="local_line">
+    <div class="local_name_data">د علي حسن حامد علي حسن</div>
+    <!-- Local_name_data || End -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 1 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 2 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 3 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 4 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 5 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 6 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 7 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 8 -->
+</div>
+<!-- Local_line || End -->
+
+<div class="local_line">
+    <div class="local_name_data">د علي حسن حامد علي حسن</div>
+    <!-- Local_name_data || End -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 1 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 2 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 3 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 4 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 5 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 6 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 7 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 8 -->
+</div>
+<!-- Local_line || End -->
+
+<div class="local_line">
+    <div class="local_name_data">د علي حسن حامد علي حسن</div>
+    <!-- Local_name_data || End -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 1 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 2 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 3 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 4 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 5 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 6 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 7 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 8 -->
+</div>
+<!-- Local_line || End -->
+
+<div class="local_line">
+    <div class="local_name_data">د علي حسن حامد علي حسن</div>
+    <!-- Local_name_data || End -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 1 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 2 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 3 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 4 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 5 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 6 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 7 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 8 -->
+</div>
+<!-- Local_line || End -->
+
+
+<div class="local_line">
+    <div class="local_name_data">د علي حسن حامد علي حسن</div>
+    <!-- Local_name_data || End -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 1 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 2 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 3 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 4 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 5 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 6 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 7 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 8 -->
+</div>
+<!-- Local_line || End -->
+
+<div class="local_line">
+    <div class="local_name_data">د علي حسن حامد علي حسن</div>
+    <!-- Local_name_data || End -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 1 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 2 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 3 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 4 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 5 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 6 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 7 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 8 -->
+</div>
+<!-- Local_line || End -->
+
+<div class="local_line">
+    <div class="local_name_data">د علي حسن حامد علي حسن</div>
+    <!-- Local_name_data || End -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 1 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 2 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 3 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 4 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 5 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 6 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 7 -->
+    <div class="local_point_data_active">
+        <div class="check_box_active"><input type="checkbox" name="" id=""></div>
+        <div class="history_data_check">2021/25/4</div>
+    </div>
+    <!-- Local_point_data_active --- 8 -->
+</div>
+<!-- Local_line || End -->
+    </div>
+    <!-- Main_table || End -->
+
+
+
+    <!-----FOOTER || START---->
+    <footer>
+        <div class="reserve">
+           <span>Copyright © Al Deeb Company 2021 All Rights Reserved</span>
+           <i class="fa fa-level-up"></i>
+        </div><!-----Reserve----->
+    </footer>
+    <!-----FOOTER || End---->
+
+</body>
+</html>
